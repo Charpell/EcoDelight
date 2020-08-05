@@ -10,6 +10,7 @@ import PaymentMethod from './PaymentMethod'
 import PaymentMethodDetail from './PaymentMethodDetail'
 import PreviewPayment from './PreviewPayment'
 import BookingDetail from './BookingDetail'
+import Hotel from './Hotel'
 
 export {
     Walkthrough,
@@ -23,5 +24,6 @@ export {
     PaymentMethod,
     PaymentMethodDetail,
     PreviewPayment,
-    BookingDetail
+    BookingDetail,
+    Hotel
 }
