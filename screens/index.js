@@ -14,6 +14,7 @@ import Hotel from './Hotel'
 import Filter from './Filter'
 import Review  from './Review'
 import Feedback from './Feedback'
+import Tour from './Tour'
 
 export {
     Walkthrough,
@@ -31,5 +32,6 @@ export {
     Hotel,
     Filter,
     Review,
-    Feedback
+    Feedback,
+    Tour
 }
