@@ -17,6 +17,8 @@ import Feedback from './Feedback'
 import Tour from './Tour'
 import SearchHistory from './SearchHistory'
 import TourDetail from './TourDetail'
+import Event from './Event'
+import DashboardEvent from './DashboardEvent'
 
 export {
     Walkthrough,
@@ -37,5 +39,7 @@ export {
     Feedback,
     Tour,
     SearchHistory,
-    TourDetail
+    TourDetail,
+    Event,
+    DashboardEvent
 }
