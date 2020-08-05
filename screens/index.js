@@ -26,6 +26,7 @@ import PreviewImage from './PreviewImage'
 import HotelInformation from './HotelInformation'
 import Search from './Search'
 import OverViewCar from './OverViewCar'
+import Car from './Car'
 
 export {
     Walkthrough,
@@ -55,5 +56,6 @@ export {
     PreviewImage,
     HotelInformation,
     Search,
-    OverViewCar
+    OverViewCar,
+    Car
 }
