@@ -5,6 +5,7 @@ import SignUp from './SignUp'
 import Home from './Home'
 import HotelDetail from './HotelDetail'
 import PreviewBooking from './PreviewBooking'
+import CheckOut from './CheckOut'
 
 export {
     Walkthrough,
@@ -13,5 +14,6 @@ export {
     SignUp,
     Home,
     HotelDetail,
-    PreviewBooking
+    PreviewBooking,
+    CheckOut
 }
