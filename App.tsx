@@ -13,7 +13,8 @@ console.disableYellowBox = true;
 export default function App() {
   let [fontsLoaded] = useFonts({
     "Raleway-Regular": require('./assets/fonts/Raleway-Regular.ttf'),
-    "Raleway-SemiBold": require('./assets/fonts/Raleway-SemiBold.ttf')
+    "Raleway-SemiBold": require('./assets/fonts/Raleway-SemiBold.ttf'),
+    "Raleway": require('./assets/fonts/Raleway-Black.ttf')
   })
 
   if (!fontsLoaded) {
