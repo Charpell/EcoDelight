@@ -16,7 +16,8 @@ export default function App() {
     "Raleway-SemiBold": require('./assets/fonts/Raleway-SemiBold.ttf'),
     "Raleway": require('./assets/fonts/Raleway-Black.ttf'),
     "Raleway-Light": require('./assets/fonts/Raleway-Light.ttf'),
-    "Raleway-Bold": require('./assets/fonts/Raleway-Bold.ttf')
+    "Raleway-Bold": require('./assets/fonts/Raleway-Bold.ttf'),
+    "Raleway-undefined": require('./assets/fonts/Raleway-Bold.ttf')
   })
 
   if (!fontsLoaded) {

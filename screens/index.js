@@ -12,6 +12,7 @@ import PreviewPayment from './PreviewPayment'
 import BookingDetail from './BookingDetail'
 import Hotel from './Hotel'
 import Filter from './Filter'
+import Review  from './Review'
 
 export {
     Walkthrough,
@@ -27,5 +28,6 @@ export {
     PreviewPayment,
     BookingDetail,
     Hotel,
-    Filter
+    Filter,
+    Review
 }
