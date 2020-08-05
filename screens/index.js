@@ -7,6 +7,8 @@ import HotelDetail from './HotelDetail'
 import PreviewBooking from './PreviewBooking'
 import CheckOut from './CheckOut'
 import PaymentMethod from './PaymentMethod'
+import PaymentMethodDetail from './PaymentMethodDetail'
+import PreviewPayment from './PreviewPayment'
 
 export {
     Walkthrough,
@@ -17,5 +19,7 @@ export {
     HotelDetail,
     PreviewBooking,
     CheckOut,
-    PaymentMethod
+    PaymentMethod,
+    PaymentMethodDetail,
+    PreviewPayment
 }
