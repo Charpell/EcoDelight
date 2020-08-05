@@ -20,6 +20,7 @@ import TourDetail from './TourDetail'
 import Event from './Event'
 import DashboardEvent from './DashboardEvent'
 import EventDetail from './EventDetail'
+import EventPreviewBooking from './EventPreviewBooking'
 
 export {
     Walkthrough,
@@ -43,5 +44,6 @@ export {
     TourDetail,
     Event,
     DashboardEvent,
-    EventDetail
+    EventDetail,
+    EventPreviewBooking
 }
