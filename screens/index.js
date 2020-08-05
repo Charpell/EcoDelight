@@ -46,6 +46,7 @@ import Messenger from './Messenger'
 import Loading from './Loading'
 import SelectDarkOption from './SelectDarkOption'
 import SelectFontOption from './SelectFontOption'
+import Profile from './Profile'
 
 export {
     Walkthrough,
@@ -95,5 +96,6 @@ export {
     Messenger,
     Loading,
     SelectDarkOption,
-    SelectFontOption
+    SelectFontOption,
+    Profile
 }
