@@ -23,6 +23,7 @@ import EventDetail from './EventDetail'
 import EventPreviewBooking from './EventPreviewBooking'
 import EventTicket from './EventTicket'
 import PreviewImage from './PreviewImage'
+import HotelInformation from './HotelInformation'
 
 export {
     Walkthrough,
@@ -49,5 +50,6 @@ export {
     EventDetail,
     EventPreviewBooking,
     EventTicket,
-    PreviewImage
+    PreviewImage,
+    HotelInformation
 }
