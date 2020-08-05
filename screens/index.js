@@ -11,6 +11,7 @@ import PaymentMethodDetail from './PaymentMethodDetail'
 import PreviewPayment from './PreviewPayment'
 import BookingDetail from './BookingDetail'
 import Hotel from './Hotel'
+import Filter from './Filter'
 
 export {
     Walkthrough,
@@ -25,5 +26,6 @@ export {
     PaymentMethodDetail,
     PreviewPayment,
     BookingDetail,
-    Hotel
+    Hotel,
+    Filter
 }
