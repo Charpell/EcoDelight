@@ -27,6 +27,7 @@ import HotelInformation from './HotelInformation'
 import Search from './Search'
 import OverViewCar from './OverViewCar'
 import Car from './Car'
+import CarDetail from './CarDetail'
 
 export {
     Walkthrough,
@@ -57,5 +58,6 @@ export {
     HotelInformation,
     Search,
     OverViewCar,
-    Car
+    Car,
+    CarDetail
 }
