@@ -37,6 +37,7 @@ import Cruise from './Cruise'
 import CruiseDetail from './CruiseDetail'
 import CruiseFilter from './CruiseFilter'
 import CruiseSearch from './CruiseSearch'
+import NotFound from './NotFound'
 
 export {
     Walkthrough,
@@ -77,5 +78,6 @@ export {
     Cruise,
     CruiseDetail,
     CruiseFilter,
-    CruiseSearch
+    CruiseSearch,
+    NotFound
 }
