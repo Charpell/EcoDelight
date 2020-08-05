@@ -16,6 +16,7 @@ import Review  from './Review'
 import Feedback from './Feedback'
 import Tour from './Tour'
 import SearchHistory from './SearchHistory'
+import TourDetail from './TourDetail'
 
 export {
     Walkthrough,
@@ -35,5 +36,6 @@ export {
     Review,
     Feedback,
     Tour,
-    SearchHistory
+    SearchHistory,
+    TourDetail
 }
