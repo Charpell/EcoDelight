@@ -4,7 +4,8 @@ import {NavigationContainer} from '@react-navigation/native';
 import {createStackNavigator} from '@react-navigation/stack';
 import {useTheme} from '@config'
 
-import {FlightFilter,FlightResult,FlightSearch,FlightSummary,FlightTicket,
+import {Cruise,CruiseDetail,CruiseFilter,CruiseSearch,
+    FlightFilter,FlightResult,FlightSearch,FlightSummary,FlightTicket,
     DashboardEvent,EventDetail,EventPreviewBooking,EventTicket,PreviewImage,HotelInformation,Search,OverViewCar,Car,CarDetail,
     Walkthrough,SignIn,ResetPassword,SignUp,Home,HotelDetail,PreviewBooking,CheckOut,PaymentMethod,PaymentMethodDetail,PreviewPayment,BookingDetail,Hotel,Filter,Review,Feedback,Tour,SearchHistory,TourDetail,Event} from '@screens'
 
@@ -51,6 +52,10 @@ export default function Navigator() {
                 <RootStack.Screen name="FlightTicket" component={FlightTicket} />
                 <RootStack.Screen name="FlightResult" component={FlightResult} />
                 <RootStack.Screen name="FlightFilter" component={FlightFilter} />
+                <RootStack.Screen name="Cruise" component={Cruise} />
+                <RootStack.Screen name="CruiseDetail" component={CruiseDetail} />
+                <RootStack.Screen name="CruiseFilter" component={CruiseFilter} />
+                <RootStack.Screen name="CruiseSearch" component={CruiseSearch} />
             </RootStack.Navigator>
         </NavigationContainer>
     )

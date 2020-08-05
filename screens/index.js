@@ -33,6 +33,10 @@ import FlightResult from './FlightResult'
 import FlightFilter from './FlightFilter'
 import FlightSummary from './FlightSummary'
 import FlightTicket from './FlightTicket'
+import Cruise from './Cruise'
+import CruiseDetail from './CruiseDetail'
+import CruiseFilter from './CruiseFilter'
+import CruiseSearch from './CruiseSearch'
 
 export {
     Walkthrough,
@@ -69,5 +73,9 @@ export {
     FlightResult,
     FlightFilter,
     FlightSummary,
-    FlightTicket
+    FlightTicket,
+    Cruise,
+    CruiseDetail,
+    CruiseFilter,
+    CruiseSearch
 }
