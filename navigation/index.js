@@ -4,7 +4,7 @@ import {NavigationContainer} from '@react-navigation/native';
 import {createStackNavigator} from '@react-navigation/stack';
 import {useTheme} from '@config'
 
-import {Walkthrough,SignIn,ResetPassword,SignUp,Home,HotelDetail,PreviewBooking,CheckOut,PaymentMethod,PaymentMethodDetail,PreviewPayment,BookingDetail,Hotel,Filter,Review} from '@screens'
+import {Walkthrough,SignIn,ResetPassword,SignUp,Home,HotelDetail,PreviewBooking,CheckOut,PaymentMethod,PaymentMethodDetail,PreviewPayment,BookingDetail,Hotel,Filter,Review,Feedback} from '@screens'
 
 const RootStack = createStackNavigator()
 
@@ -29,6 +29,7 @@ export default function Navigator() {
                 <RootStack.Screen name="Hotel" component={Hotel} />
                 <RootStack.Screen name="Filter" component={Filter} />
                 <RootStack.Screen name="Review" component={Review} />
+                <RootStack.Screen name="Feedback" component={Feedback} />
             </RootStack.Navigator>
         </NavigationContainer>
     )

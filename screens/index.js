@@ -13,6 +13,7 @@ import BookingDetail from './BookingDetail'
 import Hotel from './Hotel'
 import Filter from './Filter'
 import Review  from './Review'
+import Feedback from './Feedback'
 
 export {
     Walkthrough,
@@ -29,5 +30,6 @@ export {
     BookingDetail,
     Hotel,
     Filter,
-    Review
+    Review,
+    Feedback
 }
