@@ -24,6 +24,7 @@ import EventPreviewBooking from './EventPreviewBooking'
 import EventTicket from './EventTicket'
 import PreviewImage from './PreviewImage'
 import HotelInformation from './HotelInformation'
+import Search from './Search'
 
 export {
     Walkthrough,
@@ -51,5 +52,6 @@ export {
     EventPreviewBooking,
     EventTicket,
     PreviewImage,
-    HotelInformation
+    HotelInformation,
+    Search
 }
