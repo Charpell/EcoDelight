@@ -2,6 +2,7 @@ import {Typography, FontWeight, FontFamily} from './typography';
 import {BaseSetting} from './setting';
 import {Images} from './images';
 import {BaseStyle} from './styles';
+import Fonts from './fonts'
 import {
   BaseColor,
   useTheme,

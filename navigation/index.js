@@ -4,7 +4,7 @@ import {NavigationContainer} from '@react-navigation/native';
 import {createStackNavigator} from '@react-navigation/stack';
 import {useTheme} from '@config'
 
-import Home from '../screens/Home'
+import {Walkthrough} from '@screens'
 
 const RootStack = createStackNavigator()
 
@@ -14,7 +14,7 @@ export default function Navigator() {
     return (
         <NavigationContainer theme={theme}>
             <RootStack.Navigator>
-                <RootStack.Screen name="Home" component={Home} />
+                <RootStack.Screen name="WalkThrough" component={Walkthrough} />
             </RootStack.Navigator>
         </NavigationContainer>
     )

@@ -7,10 +7,18 @@ import {store, persistor} from './store'
 import {Provider} from 'react-redux';
 import {PersistGate} from 'redux-persist/integration/react';
 import Navigator from './navigation';
-
+import { useFonts } from 'expo-font';
 console.disableYellowBox = true;
 
 export default function App() {
+  let [fontsLoaded] = useFonts({
+    "Raleway-Regular": require('./assets/fonts/Raleway-Regular.ttf'),
+    "Raleway-SemiBold": require('./assets/fonts/Raleway-SemiBold.ttf')
+  })
+
+  if (!fontsLoaded) {
+    return null
+  }
   return (
     <Provider store={store}>
       <PersistGate loading={null} persistor={persistor}>
