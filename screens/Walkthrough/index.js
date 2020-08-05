@@ -85,7 +85,7 @@ export default function Walkthrough({navigation}) {
                 {t('not_have_account')}
               </Text>
             </TouchableOpacity>
-            <TouchableOpacity onPress={() => authentication()}>
+            <TouchableOpacity onPress={() => navigation.navigate("Home")}>
               <Text body1 primaryColor>
                 {t('join_now')}
               </Text>
