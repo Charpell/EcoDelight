@@ -15,6 +15,7 @@ import Filter from './Filter'
 import Review  from './Review'
 import Feedback from './Feedback'
 import Tour from './Tour'
+import SearchHistory from './SearchHistory'
 
 export {
     Walkthrough,
@@ -33,5 +34,6 @@ export {
     Filter,
     Review,
     Feedback,
-    Tour
+    Tour,
+    SearchHistory
 }
