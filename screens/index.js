@@ -22,6 +22,7 @@ import DashboardEvent from './DashboardEvent'
 import EventDetail from './EventDetail'
 import EventPreviewBooking from './EventPreviewBooking'
 import EventTicket from './EventTicket'
+import PreviewImage from './PreviewImage'
 
 export {
     Walkthrough,
@@ -47,5 +48,6 @@ export {
     DashboardEvent,
     EventDetail,
     EventPreviewBooking,
-    EventTicket
+    EventTicket,
+    PreviewImage
 }
