@@ -4,7 +4,7 @@ import {NavigationContainer} from '@react-navigation/native';
 import {createStackNavigator} from '@react-navigation/stack';
 import {useTheme} from '@config'
 
-import {DashboardEvent,
+import {DashboardEvent,EventDetail,
     Walkthrough,SignIn,ResetPassword,SignUp,Home,HotelDetail,PreviewBooking,CheckOut,PaymentMethod,PaymentMethodDetail,PreviewPayment,BookingDetail,Hotel,Filter,Review,Feedback,Tour,SearchHistory,TourDetail,Event} from '@screens'
 
 const RootStack = createStackNavigator()
@@ -36,6 +36,7 @@ export default function Navigator() {
                 <RootStack.Screen name="TourDetail" component={TourDetail} />
                 <RootStack.Screen name="Event" component={Event} />
                 <RootStack.Screen name="DashboardEvent" component={DashboardEvent} />
+                <RootStack.Screen name="EventDetail" component={EventDetail} />
             </RootStack.Navigator>
         </NavigationContainer>
     )

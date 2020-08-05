@@ -19,6 +19,7 @@ import SearchHistory from './SearchHistory'
 import TourDetail from './TourDetail'
 import Event from './Event'
 import DashboardEvent from './DashboardEvent'
+import EventDetail from './EventDetail'
 
 export {
     Walkthrough,
@@ -41,5 +42,6 @@ export {
     SearchHistory,
     TourDetail,
     Event,
-    DashboardEvent
+    DashboardEvent,
+    EventDetail
 }
