@@ -28,6 +28,11 @@ import Search from './Search'
 import OverViewCar from './OverViewCar'
 import Car from './Car'
 import CarDetail from './CarDetail'
+import FlightSearch from './FlightSearch'
+import FlightResult from './FlightResult'
+import FlightFilter from './FlightFilter'
+import FlightSummary from './FlightSummary'
+import FlightTicket from './FlightTicket'
 
 export {
     Walkthrough,
@@ -59,5 +64,10 @@ export {
     Search,
     OverViewCar,
     Car,
-    CarDetail
+    CarDetail,
+    FlightSearch,
+    FlightResult,
+    FlightFilter,
+    FlightSummary,
+    FlightTicket
 }
