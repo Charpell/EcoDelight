@@ -1,0 +1,12 @@
+{
+  "name": "EcoDelight",
+  "displayName": "EcoDelight",
+  "expo": {
+    "name": "EcoDelight",
+    "slug": "EcoDelight",
+    "version": "1.0.0",
+    "assetBundlePatterns": [
+      "**/*"
+    ]
+  }
+}
