@@ -40,6 +40,9 @@ import CruiseSearch from './CruiseSearch'
 import NotFound from './NotFound'
 import Post from './Post'
 import PostDetail from './PostDetail'
+import Booking from './Booking'
+import Messages from './Messages'
+import Messenger from './Messenger'
 
 export {
     Walkthrough,
@@ -83,5 +86,8 @@ export {
     CruiseSearch,
     NotFound,
     Post,
-    PostDetail
+    PostDetail,
+    Booking,
+    Messages,
+    Messenger
 }
