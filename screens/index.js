@@ -43,6 +43,9 @@ import PostDetail from './PostDetail'
 import Booking from './Booking'
 import Messages from './Messages'
 import Messenger from './Messenger'
+import Loading from './Loading'
+import SelectDarkOption from './SelectDarkOption'
+import SelectFontOption from './SelectFontOption'
 
 export {
     Walkthrough,
@@ -89,5 +92,8 @@ export {
     PostDetail,
     Booking,
     Messages,
-    Messenger
+    Messenger,
+    Loading,
+    SelectDarkOption,
+    SelectFontOption
 }
