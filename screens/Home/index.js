@@ -89,12 +89,6 @@ export default function Home({navigation}) {
   const [heightHeader, setHeightHeader] = useState(Utils.heightHeader());
   const deltaY = new Animated.Value(0);
 
-  /**
-   * @description Show icon services on form searching
-   * @author Passion UI <passionui.com>
-   * @date 2019-08-03
-   * @returns
-   */
   const renderIconService = () => {
     return (
       <FlatList

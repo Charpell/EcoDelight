@@ -37,12 +37,6 @@ export default function FlightFilter({navigation}) {
     setRound(status);
   };
 
-  /**
-   * @description Called when filtering option > Facilities
-   * @author Passion UI <passionui.com>
-   * @date 2019-08-03
-   * @param {*} select
-   */
   const onSelectTransit = select => {
     setTransit(
       transit.map(item => {
@@ -61,12 +55,6 @@ export default function FlightFilter({navigation}) {
     );
   };
 
-  /**
-   * @description Called when filtering option > Facilities
-   * @author Passion UI <passionui.com>
-   * @date 2019-08-03
-   * @param {*} select
-   */
   const onSelectFacilities = select => {
     setFacilities(
       facilities.map(item => {

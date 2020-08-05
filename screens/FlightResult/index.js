@@ -29,21 +29,10 @@ export default function FlightResult({navigation}) {
 
   const onChangeSort = () => {};
 
-  /**
-   * @description Open modal when filterring mode is applied
-   * @author Passion UI <passionui.com>
-   * @date 2019-08-03
-   */
   const onFilter = () => {
     navigation.navigate('FlightFilter');
   };
 
-  /**
-   * @description Render container view
-   * @author Passion UI <passionui.com>
-   * @date 2019-08-03
-   * @returns
-   */
   const renderContent = () => {
     const navbarTranslate = clampedScroll.interpolate({
       inputRange: [0, 40],

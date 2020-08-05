@@ -24,11 +24,6 @@ export default function Profile({navigation}) {
   const [userData] = useState(UserData[0]);
   const dispatch = useDispatch();
 
-  /**
-   * @description Simple logout with Redux
-   * @author Passion UI <passionui.com>
-   * @date 2019-08-03
-   */
   const onLogOut = () => {
     setLoading(true);
     dispatch(AuthActions.authentication(false, response => {}));

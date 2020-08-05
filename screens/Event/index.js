@@ -35,20 +35,10 @@ export default function Event({navigation}) {
    */
   const onChangeSort = () => {};
 
-  /**
-   * @description Open modal when filterring mode is applied
-   * @author Passion UI <passionui.com>
-   * @date 2019-09-01
-   */
   const onFilter = () => {
     navigation.navigate('EventFilter');
   };
 
-  /**
-   * @description Open modal when view mode is pressed
-   * @author Passion UI <passionui.com>
-   * @date 2019-09-01
-   */
   const onChangeView = () => {
     Utils.enableExperimental();
     switch (modeView) {
@@ -67,12 +57,6 @@ export default function Event({navigation}) {
     }
   };
 
-  /**
-   * @description Render container view
-   * @author Passion UI <passionui.com>
-   * @date 2019-09-01
-   * @returns
-   */
   const renderList = () => {
     const navbarTranslate = clampedScroll.interpolate({
       inputRange: [0, 40],

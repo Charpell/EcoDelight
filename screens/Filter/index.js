@@ -35,12 +35,7 @@ export default function Filter({navigation}) {
   const [childrens, setChildrens] = useState(1);
   const [scrollEnabled, setScrollEnabled] = useState(true);
 
-  /**
-   * @description Called when filtering option > Facilities
-   * @author Passion UI <passionui.com>
-   * @date 2019-08-03
-   * @param {*} select
-   */
+ 
   const onSelectFacilities = select => {
     setFacilities(
       facilities.map(item => {

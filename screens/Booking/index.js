@@ -35,12 +35,7 @@ export default function Booking({navigation}) {
     );
   };
 
-  /**
-   * @description Loading booking item history one by one
-   * @author Passion UI <passionui.com>
-   * @date 2019-08-03
-   * @returns
-   */
+  
   return (
     <SafeAreaView style={BaseStyle.safeAreaView} forceInset={{top: 'always'}}>
       <Header title={t('booking_history')} />

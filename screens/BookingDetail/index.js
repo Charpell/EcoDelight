@@ -96,13 +96,7 @@ export default function BookingDetail({navigation}) {
   );
 }
 
-/**
- * @description Show when tab Preview activated
- * @author Passion UI <passionui.com>
- * @date 2019-08-03
- * @class PreviewTab
- * @extends {Component}
- */
+
 function PreviewTab() {
   const {t} = useTranslation();
   const {colors} = useTheme();
@@ -125,13 +119,7 @@ function PreviewTab() {
   );
 }
 
-/**
- * @description Show when tab Confirm activated
- * @author Passion UI <passionui.com>
- * @date 2019-08-03
- * @class PreviewTab
- * @extends {Component}
- */
+
 function ConfirmTab() {
   const {t} = useTranslation();
   const {colors} = useTheme();

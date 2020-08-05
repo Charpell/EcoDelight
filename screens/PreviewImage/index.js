@@ -52,13 +52,6 @@ export default function PreviewImage({navigation}) {
     });
   };
 
-  /**
-   * @description Called when image item is selected or activated
-   * @author Passion UI <passionui.com>
-   * @date 2019-08-03
-   * @param {*} touched
-   * @returns
-   */
   const onTouchImage = touched => {
     if (touched == indexSelected) return;
     swiperRef.scrollBy(touched - indexSelected, false);

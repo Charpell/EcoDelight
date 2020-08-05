@@ -21,11 +21,7 @@ export default function Walkthrough({navigation}) {
   const {colors} = useTheme();
   const dispatch = useDispatch();
   const {t} = useTranslation();
-  /**
-   * @description Simple authentication without call any APIs
-   * @author Passion UI <passionui.com>
-   * @date 2019-08-03
-   */
+  
   const authentication = () => {
     setLoading(true);
     dispatch(AuthActions.authentication(true, response => {}));

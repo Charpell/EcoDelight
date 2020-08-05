@@ -291,13 +291,6 @@ function InformationTab({navigation}) {
   );
 }
 
-/**
- * @description Show when tab Itinerary activated
- * @author Passion UI <passionui.com>
- * @date 2019-08-03
- * @class PreviewTab
- * @extends {Component}
- */
 function Itinerary({navigation}) {
   const {t} = useTranslation();
   const [renderMapView, setRenderMapView] = useState(false);
@@ -537,13 +530,6 @@ function Itinerary({navigation}) {
   );
 }
 
-/**
- * @description Show when tab Package activated
- * @author Passion UI <passionui.com>
- * @date 2019-08-03
- * @class PreviewTab
- * @extends {Component}
- */
 function Feedback({navigation}) {
   const {t} = useTranslation();
   const [rate, setRate] = useState(4.5);
@@ -588,13 +574,6 @@ function Feedback({navigation}) {
   );
 }
 
-/**
- * @description Show when tab Review activated
- * @author Passion UI <passionui.com>
- * @date 2019-08-03
- * @class PreviewTab
- * @extends {Component}
- */
 function ReviewTab({navigation}) {
   const [rateDetail] = useState({
     point: 4.7,

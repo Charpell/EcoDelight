@@ -147,13 +147,7 @@ export default function TourDetail({navigation}) {
   );
 }
 
-/**
- * @description Show when tab Information activated
- * @author Passion UI <passionui.com>
- * @date 2019-08-03
- * @class PreviewTab
- * @extends {Component}
- */
+
 function InformationTab({navigation}) {
   const [tours] = useState(TourData);
   const [dayTour] = useState([
@@ -386,13 +380,7 @@ function InformationTab({navigation}) {
   );
 }
 
-/**
- * @description Show when tab Tour activated
- * @author Passion UI <passionui.com>
- * @date 2019-08-03
- * @class PreviewTab
- * @extends {Component}
- */
+
 function TourTab({navigation}) {
   return (
     <ScrollView>
@@ -528,13 +516,7 @@ function TourTab({navigation}) {
   );
 }
 
-/**
- * @description Show when tab Package activated
- * @author Passion UI <passionui.com>
- * @date 2019-08-03
- * @class PreviewTab
- * @extends {Component}
- */
+
 function PackageTab({navigation}) {
   const [packageItem] = useState(PackageData[0]);
   const [packageItem2] = useState(PackageData[2]);
@@ -578,13 +560,7 @@ function PackageTab({navigation}) {
   );
 }
 
-/**
- * @description Show when tab Review activated
- * @author Passion UI <passionui.com>
- * @date 2019-08-03
- * @class PreviewTab
- * @extends {Component}
- */
+
 function ReviewTab({navigation}) {
   const [refreshing] = useState(false);
   const [rateDetail] = useState({

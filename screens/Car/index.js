@@ -70,12 +70,7 @@ export default function Car({navigation}) {
     }
   };
 
-  /**
-   * @description Render container view
-   * @author Passion UI <passionui.com>
-   * @date 2019-08-03
-   * @returns
-   */
+  
   const renderContent = () => {
     const navbarTranslate = clampedScroll.interpolate({
       inputRange: [0, 40],
