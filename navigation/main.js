@@ -6,7 +6,7 @@ import {BaseColor, useTheme, useFont} from '@config';
 import {useTranslation} from 'react-i18next';
 import {Icon} from '@components';
 
-import {NotFound,Post,PostDetail,Booking,Messages,Messenger,
+import {NotFound,Post,PostDetail,Booking,Messages,Messenger,Profile,
     Cruise,CruiseDetail,CruiseFilter,CruiseSearch,
     FlightFilter,FlightResult,FlightSearch,FlightSummary,FlightTicket,
     DashboardEvent,EventDetail,EventPreviewBooking,EventTicket,PreviewImage,HotelInformation,Search,OverViewCar,Car,CarDetail,

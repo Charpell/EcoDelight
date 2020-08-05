@@ -1,66 +1,84 @@
-import React from 'react'
-
+import React, {useEffect} from 'react';
+import {StatusBar} from 'react-native';
 import {NavigationContainer} from '@react-navigation/native';
 import {createStackNavigator} from '@react-navigation/stack';
-import {useTheme} from '@config'
+import {DarkModeProvider, useDarkMode} from 'react-native-dark-mode';
+import {useTheme, BaseSetting} from '@config';
+import SplashScreen from 'react-native-splash-screen';
+import i18n from 'i18next';
+import {initReactI18next} from 'react-i18next';
+import {useSelector} from 'react-redux';
 
-import {NotFound,Post,PostDetail,
-    Cruise,CruiseDetail,CruiseFilter,CruiseSearch,
-    FlightFilter,FlightResult,FlightSearch,FlightSummary,FlightTicket,
-    DashboardEvent,EventDetail,EventPreviewBooking,EventTicket,PreviewImage,HotelInformation,Search,OverViewCar,Car,CarDetail,
-    Walkthrough,SignIn,ResetPassword,SignUp,Home,HotelDetail,PreviewBooking,CheckOut,PaymentMethod,PaymentMethodDetail,PreviewPayment,BookingDetail,Hotel,Filter,Review,Feedback,Tour,SearchHistory,TourDetail,Event} from '@screens'
+import Main from './main'
+import {Loading,Filter,FlightFilter,Search,SearchHistory,PreviewImage,SelectCruise,CruiseFilter,EventFilter,SelectDarkOption,SelectFontOption,NotFound} from '@screens'
+
 
 const RootStack = createStackNavigator()
 
-
 export default function Navigator() {
-    const {theme, colors} = useTheme()
+    const storeLanguage = useSelector(state => state.application.language);
+    const {theme, colors} = useTheme();
+    const isDarkMode = useDarkMode();
+  
+    const forFade = ({current, closing}) => ({
+      cardStyle: {
+        opacity: current.progress,
+      },
+    });
+  
+    useEffect(() => {
+      i18n.use(initReactI18next).init({
+        resources: BaseSetting.resourcesLanguage,
+        lng: storeLanguage ?? BaseSetting.defaultLanguage,
+        fallbackLng: BaseSetting.defaultLanguage,
+      });
+      SplashScreen.hide();
+      StatusBar.setBackgroundColor(colors.primary, true);
+      StatusBar.setBarStyle(isDarkMode ? 'light-content' : 'dark-content', true);
+    }, []);
+  
     return (
+      <DarkModeProvider>
         <NavigationContainer theme={theme}>
-            <RootStack.Navigator>
-                <RootStack.Screen name="WalkThrough" component={Walkthrough} />
-                <RootStack.Screen name="SignIn" component={SignIn} />
-                <RootStack.Screen name="ResetPassword" component={ResetPassword} />
-                <RootStack.Screen name="SignUp" component={SignUp} />
-                <RootStack.Screen name="Home" component={Home} />
-                <RootStack.Screen name="HotelDetail" component={HotelDetail} />
-                <RootStack.Screen name="PreviewBooking" component={PreviewBooking} />
-                <RootStack.Screen name="CheckOut" component={CheckOut} />
-                <RootStack.Screen name="PaymentMethod" component={PaymentMethod} />
-                <RootStack.Screen name="PaymentMethodDetail" component={PaymentMethodDetail} />
-                <RootStack.Screen name="PreviewPayment" component={PreviewPayment} />
-                <RootStack.Screen name="BookingDetail" component={BookingDetail} />
-                <RootStack.Screen name="Hotel" component={Hotel} />
-                <RootStack.Screen name="Filter" component={Filter} />
-                <RootStack.Screen name="Review" component={Review} />
-                <RootStack.Screen name="Feedback" component={Feedback} />
-                <RootStack.Screen name="Tour" component={Tour} />
-                <RootStack.Screen name="SearchHistory" component={SearchHistory} />
-                <RootStack.Screen name="TourDetail" component={TourDetail} />
-                <RootStack.Screen name="Event" component={Event} />
-                <RootStack.Screen name="DashboardEvent" component={DashboardEvent} />
-                <RootStack.Screen name="EventDetail" component={EventDetail} />
-                <RootStack.Screen name="EventPreviewBooking" component={EventPreviewBooking} />
-                <RootStack.Screen name="EventTicket" component={EventTicket} />
-                <RootStack.Screen name="PreviewImage" component={PreviewImage} />
-                <RootStack.Screen name="HotelInformation" component={HotelInformation} />
-                <RootStack.Screen name="Search" component={Search} />
-                <RootStack.Screen name="OverViewCar" component={OverViewCar} />
-                <RootStack.Screen name="Car" component={Car} />
-                <RootStack.Screen name="CarDetail" component={CarDetail} />
-                <RootStack.Screen name="FlightSearch" component={FlightSearch} />
-                <RootStack.Screen name="FlightSummary" component={FlightSummary} />
-                <RootStack.Screen name="FlightTicket" component={FlightTicket} />
-                <RootStack.Screen name="FlightResult" component={FlightResult} />
-                <RootStack.Screen name="FlightFilter" component={FlightFilter} />
-                <RootStack.Screen name="Cruise" component={Cruise} />
-                <RootStack.Screen name="CruiseDetail" component={CruiseDetail} />
-                <RootStack.Screen name="CruiseFilter" component={CruiseFilter} />
-                <RootStack.Screen name="CruiseSearch" component={CruiseSearch} />
-                <RootStack.Screen name="BusSearch" component={NotFound} />
-                <RootStack.Screen name="Post" component={Post} />
-                <RootStack.Screen name="PostDetail" component={PostDetail} />
-            </RootStack.Navigator>
+          <RootStack.Navigator
+            mode="modal"
+            headerMode="none"
+            initialRouteName="Loading">
+            <RootStack.Screen
+              name="Loading"
+              component={Loading}
+              options={{gestureEnabled: false}}
+            />
+            <RootStack.Screen name="Main" component={Main} />
+            <RootStack.Screen name="Filter" component={Filter} />
+            <RootStack.Screen name="FlightFilter" component={FlightFilter} />
+            <RootStack.Screen name="BusFilter" component={NotFound} />
+            <RootStack.Screen name="Search" component={Search} />
+            <RootStack.Screen name="SearchHistory" component={SearchHistory} />
+            <RootStack.Screen name="PreviewImage" component={PreviewImage} />
+            <RootStack.Screen name="SelectBus" component={NotFound} />
+            <RootStack.Screen name="CruiseFilter" component={CruiseFilter} />
+            <RootStack.Screen
+              name="SelectDarkOption"
+              component={SelectDarkOption}
+              gestureEnabled={false}
+              options={{
+                cardStyleInterpolator: forFade,
+                cardStyle: {backgroundColor: 'rgba(0, 0, 0, 0.5)'},
+              }}
+            />
+            <RootStack.Screen
+              name="SelectFontOption"
+              component={SelectFontOption}
+              gestureEnabled={false}
+              options={{
+                cardStyleInterpolator: forFade,
+                cardStyle: {backgroundColor: 'rgba(0, 0, 0, 0.5)'},
+              }}
+            />
+          </RootStack.Navigator>
         </NavigationContainer>
-    )
-}
+      </DarkModeProvider>
+    );
+  }
+  
