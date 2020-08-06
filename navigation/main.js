@@ -6,7 +6,7 @@ import {BaseColor, useTheme, useFont} from '@config';
 import {useTranslation} from 'react-i18next';
 import {Icon} from '@components';
 
-import {NotFound,Post,PostDetail,Booking,Messages,Messenger,Profile,
+import {NotFound,Post,PostDetail,Booking,Messages,Messenger,Profile,ProfileEdit,
     Cruise,CruiseDetail,CruiseFilter,CruiseSearch,
     FlightFilter,FlightResult,FlightSearch,FlightSummary,FlightTicket,
     DashboardEvent,EventDetail,EventPreviewBooking,EventTicket,PreviewImage,HotelInformation,Search,OverViewCar,Car,CarDetail,
@@ -65,6 +65,7 @@ export default function Main() {
                 <RootStack.Screen name="Post" component={Post} />
                 <RootStack.Screen name="PostDetail" component={PostDetail} />
                 <RootStack.Screen name="Messages" component={Messages} />
+                <RootStack.Screen name="ProfileEdit" component={ProfileEdit} />
             </RootStack.Navigator>
     )
 }

@@ -47,6 +47,7 @@ import Loading from './Loading'
 import SelectDarkOption from './SelectDarkOption'
 import SelectFontOption from './SelectFontOption'
 import Profile from './Profile'
+import ProfileEdit from './ProfileEdit'
 
 export {
     Walkthrough,
@@ -97,5 +98,6 @@ export {
     Loading,
     SelectDarkOption,
     SelectFontOption,
-    Profile
+    Profile,
+    ProfileEdit
 }
