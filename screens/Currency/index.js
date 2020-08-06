@@ -18,12 +18,7 @@ export default function Currency({navigation}) {
   const [loading, setLoading] = useState(false);
   const [currency, setCurrency] = useState(CurrencyData);
 
-  /**
-   * @description Called when setting currency is selected
-   * @author Passion UI <passionui.com>
-   * @date 2019-08-03
-   * @param {object} select
-   */
+  
   const onSelect = select => {
     setCurrency(
       currency.map(item => {
@@ -42,14 +37,6 @@ export default function Currency({navigation}) {
     );
   };
 
-  /**
-   * @description Load item one by one
-   * @author Passion UI <passionui.com>
-   * @date 2019-08-03
-   * @param {*} item
-   * @param {*} index
-   * @returns
-   */
   const renderItem = (item, index) => {
     return (
       <TouchableOpacity
