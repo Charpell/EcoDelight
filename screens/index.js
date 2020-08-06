@@ -55,6 +55,7 @@ import AddPayment from './AddPayment'
 import Notification from './Notification'
 import Setting from './Setting'
 import ThemeSetting from './ThemeSetting'
+import ProfileExample from './ProfileExample'
 
 export {
     Walkthrough,
@@ -113,5 +114,6 @@ export {
     AddPayment,
     Notification,
     Setting,
-    ThemeSetting
+    ThemeSetting,
+    ProfileExample
 }
