@@ -54,12 +54,6 @@ export default function Filter({navigation}) {
     );
   };
 
-  /**
-   * @description Called when filtering option > Room Types
-   * @author Passion UI <passionui.com>
-   * @date 2019-08-03
-   * @param {*} select
-   */
   const onSelectRoomType = select => {
     setRoomType(
       roomType.map(item => {
@@ -78,12 +72,6 @@ export default function Filter({navigation}) {
     );
   };
 
-  /**
-   * @description Called when filtering option > Interio
-   * @author Passion UI <passionui.com>
-   * @date 2019-08-03
-   * @param {*} select
-   */
   const onSelectInterio = select => {
     setInterio(
       interio.map(item => {

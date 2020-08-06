@@ -142,13 +142,6 @@ function ConfirmTab() {
   );
 }
 
-/**
- * @description Show when tab Detail activated
- * @author Passion UI <passionui.com>
- * @date 2019-08-03
- * @class PreviewTab
- * @extends {Component}
- */
 function DetailTab() {
   const {t} = useTranslation();
   const {colors} = useTheme();
@@ -171,13 +164,6 @@ function DetailTab() {
   );
 }
 
-/**
- * @description Show when tab Complete activated
- * @author Passion UI <passionui.com>
- * @date 2019-08-03
- * @class PreviewTab
- * @extends {Component}
- */
 function CompleteTab() {
   const {t} = useTranslation();
   const {colors} = useTheme();

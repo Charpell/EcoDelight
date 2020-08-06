@@ -21,7 +21,7 @@ export default function Loading({navigation}) {
       <Image source={Images.logo} style={styles.logo} resizeMode="contain" />
       <View style={styles.content}>
         <Text title1 whiteColor semibold>
-          Felix Travel
+          EcoDelight
         </Text>
         <ActivityIndicator
           size="large"

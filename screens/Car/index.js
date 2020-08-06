@@ -34,20 +34,10 @@ export default function Car({navigation}) {
    */
   const onChangeSort = () => {};
 
-  /**
-   * @description Open modal when filterring mode is applied
-   * @author Passion UI <passionui.com>
-   * @date 2019-08-03
-   */
   const onFilter = () => {
     navigation.navigate('Filter');
   };
 
-  /**
-   * @description Open modal when view mode is pressed
-   * @author Passion UI <passionui.com>
-   * @date 2019-08-03
-   */
   const onChangeView = () => {
     Utils.enableExperimental();
     switch (modeView) {

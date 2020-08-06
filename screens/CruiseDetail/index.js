@@ -219,13 +219,6 @@ export default function CruiseDetail({navigation}) {
   );
 }
 
-/**
- * @description Show when tab Information activated
- * @author Passion UI <passionui.com>
- * @date 2019-08-03
- * @class PreviewTab
- * @extends {Component}
- */
 function InformationTab({navigation}) {
   const {t} = useTranslation();
   return (
