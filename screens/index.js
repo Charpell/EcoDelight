@@ -53,6 +53,7 @@ import Currency from './Currency'
 import MyPaymentMethod from './MyPaymentMethod'
 import AddPayment from './AddPayment'
 import Notification from './Notification'
+import Setting from './Setting'
 
 export {
     Walkthrough,
@@ -109,5 +110,6 @@ export {
     Currency,
     MyPaymentMethod,
     AddPayment,
-    Notification
+    Notification,
+    Setting
 }

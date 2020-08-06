@@ -6,7 +6,7 @@ import {BaseColor, useTheme, useFont} from '@config';
 import {useTranslation} from 'react-i18next';
 import {Icon} from '@components';
 
-import {NotFound,Post,PostDetail,Booking,Messages,Messenger,Profile,ProfileEdit,ChangePassword,Currency,MyPaymentMethod,AddPayment,Notification,
+import {NotFound,Post,PostDetail,Booking,Messages,Messenger,Profile,ProfileEdit,ChangePassword,Currency,MyPaymentMethod,AddPayment,Notification,Setting,
     Cruise,CruiseDetail,CruiseFilter,CruiseSearch,
     FlightFilter,FlightResult,FlightSearch,FlightSummary,FlightTicket,
     DashboardEvent,EventDetail,EventPreviewBooking,EventTicket,PreviewImage,HotelInformation,Search,OverViewCar,Car,CarDetail,
@@ -71,6 +71,7 @@ export default function Main() {
                 <RootStack.Screen name="MyPaymentMethod" component={MyPaymentMethod} />
                 <RootStack.Screen name="AddPayment" component={AddPayment} />
                 <RootStack.Screen name="Notification" component={Notification} />
+                <RootStack.Screen name="Setting" component={Setting} />
             </RootStack.Navigator>
     )
 }
