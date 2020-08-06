@@ -4,7 +4,6 @@ import {NavigationContainer} from '@react-navigation/native';
 import {createStackNavigator} from '@react-navigation/stack';
 import {DarkModeProvider, useDarkMode} from 'react-native-dark-mode';
 import {useTheme, BaseSetting} from '@config';
-import SplashScreen from 'react-native-splash-screen';
 import i18n from 'i18next';
 import {initReactI18next} from 'react-i18next';
 import {useSelector} from 'react-redux';
@@ -32,7 +31,6 @@ export default function Navigator() {
         lng: storeLanguage ?? BaseSetting.defaultLanguage,
         fallbackLng: BaseSetting.defaultLanguage,
       });
-      SplashScreen.hide();
       StatusBar.setBackgroundColor(colors.primary, true);
       StatusBar.setBarStyle(isDarkMode ? 'light-content' : 'dark-content', true);
     }, []);
