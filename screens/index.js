@@ -51,6 +51,7 @@ import ProfileEdit from './ProfileEdit'
 import ChangePassword from './ChangePassword'
 import Currency from './Currency'
 import MyPaymentMethod from './MyPaymentMethod'
+import AddPayment from './AddPayment'
 
 export {
     Walkthrough,
@@ -105,5 +106,6 @@ export {
     ProfileEdit,
     ChangePassword,
     Currency,
-    MyPaymentMethod
+    MyPaymentMethod,
+    AddPayment
 }
