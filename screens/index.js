@@ -54,6 +54,7 @@ import MyPaymentMethod from './MyPaymentMethod'
 import AddPayment from './AddPayment'
 import Notification from './Notification'
 import Setting from './Setting'
+import ThemeSetting from './ThemeSetting'
 
 export {
     Walkthrough,
@@ -111,5 +112,6 @@ export {
     MyPaymentMethod,
     AddPayment,
     Notification,
-    Setting
+    Setting,
+    ThemeSetting
 }
