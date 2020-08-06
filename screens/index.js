@@ -48,6 +48,9 @@ import SelectDarkOption from './SelectDarkOption'
 import SelectFontOption from './SelectFontOption'
 import Profile from './Profile'
 import ProfileEdit from './ProfileEdit'
+import ChangePassword from './ChangePassword'
+import Currency from './Currency'
+import MyPaymentMethod from './MyPaymentMethod'
 
 export {
     Walkthrough,
@@ -99,5 +102,8 @@ export {
     SelectDarkOption,
     SelectFontOption,
     Profile,
-    ProfileEdit
+    ProfileEdit,
+    ChangePassword,
+    Currency,
+    MyPaymentMethod
 }
